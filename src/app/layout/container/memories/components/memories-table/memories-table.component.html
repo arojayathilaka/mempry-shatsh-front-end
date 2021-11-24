@@ -1,0 +1,34 @@
+<p-table [value]="memories" responsiveLayout="scroll">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Group Name</th>
+      <th>Actions</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-memory>
+    <tr>
+      <td>{{memory?.title}}</td>
+      <td>{{memory?.description}}</td>
+      <td>{{memory.group?.name}}</td>
+      <td>
+          <button
+            pButton
+            pRipple
+            type="button"
+            icon="pi pi-pencil"
+            class="p-button-rounded p-button-warning p-button-outlined">
+          </button>
+          <button
+            pButton
+            pRipple
+            type="button"
+            icon="pi pi-times"
+            class="p-button-rounded p-button-danger p-button-outlined"
+            (click)="deleteMemory(memory.id)">
+          </button>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
