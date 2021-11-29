@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MemoriesComponent } from './page/memories/memories.component';
+import { MemoriesComponent } from './page/memories.component';
 import { MemoriesTableComponent } from './components/memories-table/memories-table.component';
-import {TableModule} from 'primeng/table';
-import {ButtonModule} from 'primeng/button';
-import {RippleModule} from 'primeng/ripple';
+import { TableModule } from 'primeng/table';
+import { ButtonModule } from 'primeng/button';
+import { RippleModule } from 'primeng/ripple';
 import { MemoriesAddDialogComponent } from './components/memories-add-dialog/memories-add-dialog.component';
 import { MemoriesUpdateDialogComponent } from './components/memories-update-dialog/memories-update-dialog.component';
-import {DialogModule} from 'primeng/dialog';
-import {InputTextModule} from 'primeng/inputtext';
-import {CalendarModule} from 'primeng/calendar';
-import {MultiSelectModule} from 'primeng/multiselect';
+import { DialogModule } from 'primeng/dialog';
+import { InputTextModule } from 'primeng/inputtext';
+import { CalendarModule } from 'primeng/calendar';
+import { MultiSelectModule } from 'primeng/multiselect';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import {MultiSelectModule} from 'primeng/multiselect';
     InputTextModule,
     CalendarModule,
     MultiSelectModule,
+    FormsModule
   ]
 })
 export class MemoryModule { }

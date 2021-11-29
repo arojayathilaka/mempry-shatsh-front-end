@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {Store} from '@ngrx/store';
+import { Store } from '@ngrx/store';
 import * as fromApp from '../../../../../app.reducer'
-import {MemoriesModel} from '../../../../../../api/models/memories.model';
-import {MemoryApiService} from '../../memory-api.service';
-import {MEMORIES_DATA_REQUEST} from '../../store/memory.action';
+import { MemoriesModel } from '../../../../../../api/models/memories.model';
+import { MemoryApiService } from '../../memory-api.service';
+import { MEMORIES_DATA_REQUEST } from '../../store/memory.action';
 
 @Component({
   selector: 'app-memories-table',
@@ -17,10 +17,10 @@ export class MemoriesTableComponent implements OnInit {
   constructor(private store: Store<fromApp.AppState>, private memoryApiService: MemoryApiService) {
     this.store.select(fromApp.getMemoryReducer)
       .subscribe(res => {
-          if (res?.memories?.length > 0) {
-            this.memories = res.memories;
-          }
+        if (res?.memories?.length > 0) {
+          this.memories = res.memories;
         }
+      }
         , error => console.error(error));
   }
 

@@ -1,6 +1,6 @@
 import * as MemoryManagement from './memory.action'
-import {createReducer, on} from '@ngrx/store';
-import {MemoriesResponseModel} from '../../../../../api/models/memories.response.model';
+import { createReducer, on } from '@ngrx/store';
+import { MemoriesResponseModel } from '../../../../../api/models/memories.response.model';
 
 export interface State {
   memories: MemoriesResponseModel[];
@@ -17,7 +17,7 @@ export const memoryReducer = createReducer(
       ...state
     };
   }),
-  on(MemoryManagement.MEMORIES_DATA_LOADED, (state, {payload}) => {
+  on(MemoryManagement.MEMORIES_DATA_LOADED, (state, { payload }) => {
     return {
       ...state,
       memories: payload

@@ -1,7 +1,7 @@
-import {Component, OnInit} from '@angular/core';
-import {AddDialogSubject} from '../../../../../../subjects/dialog.subject';
-import {MemoryApiService} from '../../memory-api.service';
-import {GroupsResponseModel} from '../../../../../../api/models/groups.response.model';
+import { Component, OnInit } from '@angular/core';
+import { AddDialogSubject } from '../../../../../../subjects/dialog.subject';
+import { MemoryApiService } from '../../memory-api.service';
+import { GroupsResponseModel } from '../../../../../../api/models/groups.response.model';
 
 @Component({
   selector: 'app-memories-add-dialog',

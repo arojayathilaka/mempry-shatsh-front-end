@@ -1,4 +1,4 @@
-import {ActionReducerMap, createFeatureSelector, createSelector} from '@ngrx/store';
+import { ActionReducerMap, createFeatureSelector } from '@ngrx/store';
 import * as fromMemoryManagement from './layout/container/memories/store/memory.reducer'
 
 export interface AppState {

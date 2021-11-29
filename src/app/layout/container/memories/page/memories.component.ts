@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {MEMORIES_DATA_REQUEST} from '../../store/memory.action';
-import {Store} from '@ngrx/store';
-import * as fromApp from '../../../../../app.reducer';
-import {AddDialogSubject} from '../../../../../../subjects/dialog.subject';
+import { MEMORIES_DATA_REQUEST } from '../store/memory.action';
+import { Store } from '@ngrx/store';
+import * as fromApp from '../../../../app.reducer';
+import { AddDialogSubject } from '../../../../../subjects/dialog.subject';
 
 @Component({
   selector: 'app-memories',
